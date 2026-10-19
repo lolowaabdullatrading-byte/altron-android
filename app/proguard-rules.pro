@@ -1,0 +1,2 @@
+-keepclassmembers class qa.altron.app.WebBridge { @android.webkit.JavascriptInterface <methods>; }
+-keep class com.google.firebase.** { *; }
