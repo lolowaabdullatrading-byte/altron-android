@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Altron" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/navy</item>
+        <item name="colorSecondary">@color/blue</item>
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+    <style name="Theme.Altron.Splash" parent="Theme.Altron">
+        <item name="android:windowBackground">@drawable/splash</item>
+    </style>
+</resources>

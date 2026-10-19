@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fillViewport="true" android:fitsSystemWindows="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp" android:gravity="center_horizontal">
+    <ImageView android:layout_width="96dp" android:layout_height="96dp" android:layout_marginTop="24dp" android:src="@mipmap/ic_launcher" android:contentDescription="Altron" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ALTRON" android:textColor="@color/navy" android:textSize="34sp" android:textStyle="bold" android:layout_marginTop="10dp" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PEOPLE · PROJECTS · PROGRESS" android:textColor="@color/blue" android:textSize="11sp" android:letterSpacing="0.2" android:textStyle="bold" android:layout_marginBottom="22dp" />
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/white" android:padding="20dp" android:elevation="6dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Sign in" android:textColor="@color/ink" android:textSize="22sp" android:textStyle="bold" android:gravity="center" />
+        <RadioGroup android:id="@+id/modeGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginTop="12dp" android:layout_marginBottom="6dp">
+            <RadioButton android:id="@+id/modeStaff" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Staff" android:checked="true" />
+            <RadioButton android:id="@+id/modeWorker" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Worker" />
+            <RadioButton android:id="@+id/modeAdmin" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="Admin" />
+        </RadioGroup>
+        <EditText android:id="@+id/mobile" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Mobile number" android:inputType="phone" android:autofillHints="phone" android:padding="14dp" android:layout_marginTop="6dp" />
+        <EditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Password" android:inputType="textPassword" android:autofillHints="password" android:padding="14dp" android:layout_marginTop="8dp" />
+        <TextView android:id="@+id/err" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#991B1B" android:visibility="gone" android:layout_marginTop="8dp" />
+        <Button android:id="@+id/btnLogin" android:layout_width="match_parent" android:layout_height="52dp" android:text="SIGN IN" android:textStyle="bold" android:backgroundTint="@color/blue" android:textColor="@color/white" android:layout_marginTop="14dp" />
+        <ProgressBar android:id="@+id/prog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center" android:visibility="gone" android:layout_marginTop="8dp" />
+        <TextView android:id="@+id/help" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="New here? Register on the website" android:textColor="@color/blue" android:gravity="center" android:padding="12dp" android:layout_marginTop="6dp" />
+    </LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Same mobile number and password as the Altron website." android:textColor="@color/mut" android:textSize="12sp" android:gravity="center" android:layout_marginTop="14dp" />
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg" android:fitsSystemWindows="true">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="One-time setup" android:textColor="@color/navy" android:textSize="24sp" android:textStyle="bold" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="So the app can record your attendance and keep working while your phone is in your pocket. Location is shared only between check-in and check-out." android:textColor="@color/mut" android:layout_marginTop="6dp" android:layout_marginBottom="14dp" />
+
+    <LinearLayout style="@style/SetupRow"><TextView style="@style/SetupLabel" android:text="1. Location access" /><TextView android:id="@+id/stLoc" style="@style/SetupState" /><Button android:id="@+id/bLoc" style="@style/SetupBtn" android:text="Allow" /></LinearLayout>
+    <LinearLayout style="@style/SetupRow"><TextView style="@style/SetupLabel" android:text="2. Location → All the time" /><TextView android:id="@+id/stBg" style="@style/SetupState" /><Button android:id="@+id/bBg" style="@style/SetupBtn" android:text="Set" /></LinearLayout>
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="On the next screen tap Permissions → Location → 'Allow all the time'." android:textColor="@color/mut" android:textSize="12sp" android:layout_marginBottom="8dp" />
+    <LinearLayout style="@style/SetupRow"><TextView style="@style/SetupLabel" android:text="3. Notifications" /><TextView android:id="@+id/stNotif" style="@style/SetupState" /><Button android:id="@+id/bNotif" style="@style/SetupBtn" android:text="Allow" /></LinearLayout>
+    <LinearLayout style="@style/SetupRow"><TextView style="@style/SetupLabel" android:text="4. Battery: unrestricted" /><TextView android:id="@+id/stBat" style="@style/SetupState" /><Button android:id="@+id/bBat" style="@style/SetupBtn" android:text="Set" /></LinearLayout>
+
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="5. Your phone brand" android:textColor="@color/ink" android:textStyle="bold" android:layout_marginTop="14dp" />
+    <TextView android:id="@+id/brandHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/mut" android:textSize="13sp" android:layout_marginTop="4dp" />
+    <Button android:id="@+id/bAutostart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Open phone settings" android:layout_marginTop="6dp" />
+
+    <Button android:id="@+id/bDone" android:layout_width="match_parent" android:layout_height="52dp" android:text="Continue" android:textStyle="bold" android:backgroundTint="@color/blue" android:textColor="@color/white" android:layout_marginTop="22dp" />
+</LinearLayout>
+</ScrollView>
