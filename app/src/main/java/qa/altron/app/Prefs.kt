@@ -19,7 +19,7 @@ class Prefs(ctx: Context) {
     var latestVersionName: String get() = p.getString("latest_ver", "") ?: ""; set(v) { p.edit().putString("latest_ver", v).apply() }
     var latestVersionCode: Int get() = p.getInt("latest_code", 0); set(v) { p.edit().putInt("latest_code", v).apply() }
     var fcmToken: String? get() = p.getString("fcm", null); set(v) { p.edit().putString("fcm", v).apply() }
-    var deviceId: String get() {
+    val deviceId: String get() {
         var id = p.getString("device_id", null)
         if (id == null) { id = java.util.UUID.randomUUID().toString().replace("-", "").take(24); p.edit().putString("device_id", id).apply() }
         return id
